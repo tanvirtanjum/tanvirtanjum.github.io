@@ -178,34 +178,38 @@
 
     <!-- Academics Tab -->
     <div class="container-fluid" id="academic" style="max-width: 100%; max-height: 100%;">
-      <div class="container-fluid" style="max-width: 26%; max-height: 100%; float: left;">
-        <nav id="navbar-example3" class="navbar navbar-dark bg-dark flex-column align-items-stretch p-3"
-          style="max-height: 100%;">
-          <h1 class="navbar-brand"><i class="fas fa-school"></i>&nbsp&nbsp Academics</h1>
-          <nav class="nav nav-pills flex-column">
-            <button type="button" class="btn btn-dark m-2" style="text-align:left;" id="jscBtn">
-              <i class="fas fa-user-graduate"></i>&nbsp&nbsp Junior School Certificate
+      <!-- <div class="container-fluid" style="max-width: 100%; float: left;"> -->
+        <li class="nav-item dropdown">
+          <li class="btn-group dropdown">
+            <button class="btn btn-dark dropdown-toggle m-2 container-fluid" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-school"></i>&nbsp&nbsp Select Academics
             </button>
-          </nav>
-          <nav class="nav nav-pills flex-column">
-            <button type="button" class="btn btn-dark m-2" style="text-align:left;" id="sscBtn">
-              <i class="fas fa-user-graduate"></i>&nbsp&nbsp Secondary School Certificate
-            </button>
-          </nav>
-          <nav class="nav nav-pills flex-column">
-            <button type="button" class="btn btn-dark m-2" style="text-align:left;" id="hscBtn">
-              <i class="fas fa-user-graduate"></i>&nbsp&nbsp Higher Secondary School Certificate
-            </button>
-          </nav>
-          <nav class="nav nav-pills flex-column">
-            <button type="button" class="btn btn-dark m-2" style="text-align:left;" id="bscBtn">
-              <i class="fas fa-user-graduate"></i>&nbsp&nbsp Bachelor of Science
-            </button>
-          </nav>
-        </nav>
-      </div>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton3">
+              <li>
+                <button type="button" class="btn btn-dark dropdown-item" id="jscBtn">
+                  <i class="fas fa-user-graduate"></i>&nbsp&nbsp Junior School Certificate
+                </button>
+              </li>
+              <li>
+                <button type="button" class="btn btn-dark dropdown-item" id="sscBtn">
+                  <i class="fas fa-user-graduate"></i>&nbsp&nbsp Secondary School Certificate
+                </button>
+              </li>
+              <li>
+                <button type="button" class="btn btn-dark dropdown-item" id="hscBtn">
+                  <i class="fas fa-user-graduate"></i>&nbsp&nbsp Higher Secondary School Certificate 
+                </button>
+              </li>
+              <li>
+                <button type="button" class="btn btn-dark dropdown-item" id="bscBtn">
+                  <i class="fas fa-user-graduate"></i>&nbsp&nbsp Bachelor of Science
+                </button>
+              </li>
+            </ul>
+          </li>
+      <!-- </div> -->
 
-      <div class="container-fluid" style="max-width: 74%; float: left;">
+      <div class="container-fluid" style="max-width: 100%; float: left;">
 
         <div id="jsc" class="card mb-3 container-fluid">
           <img class="img-fluid rounded mx-auto d-block img-thumbnail" src="assets/images/jsc.jpg" alt=""
@@ -470,9 +474,9 @@
   <div class="fixed-bottom nav justify-content-end container-fluid">
     <li class="nav-item dropdown">
     <li class="btn-group dropup">
-      <button class="btn btn-dark dropdown-toggle m-2 container-fluid" type="button" id="dropdownMenuButton3"
-        data-bs-toggle="dropdown" aria-expanded="false"
-        style="background-color:rgba(2, 28, 177, 0.411); border-color: transparent; border-radius: 50%; height: 3vw; width: 3vw;"></button>
+      <button class="btn btn-dark container-fluid" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false" style="background-color:rgba(2, 28, 177, 0.411); border-color: transparent; border-radius: 50%; height: 3vw; width: 3vw;">
+        <i class="fas fa-hand-point-up"></i>
+      </button>
       <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton3">
 
         <li align = "middle">

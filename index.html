@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Tanvir Tanjum Shourav</title>
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="assets/jQuery/jQuery.js"></script>
+  <script type="text/javascript" src="controllers/controller.js"></script>
+
+  <script type="text/javascript" src="assets\javaScript\googleMapApiJavaScript.js"></script>
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDiIkbfHz52G8g7cz6X10ch_Tye_BrNnQ&callback=initMap&libraries=&v=weekly"
+    async></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDiIkbfHz52G8g7cz6X10ch_Tye_BrNnQ&callback=initMap1&libraries=&v=weekly" async></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDiIkbfHz52G8g7cz6X10ch_Tye_BrNnQ&callback=initMap2&libraries=&v=weekly" async></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDiIkbfHz52G8g7cz6X10ch_Tye_BrNnQ&callback=initMap3&libraries=&v=weekly" async></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDiIkbfHz52G8g7cz6X10ch_Tye_BrNnQ&callback=initMap4&libraries=&v=weekly" async></script> -->
+</head>
+
+<body class="bg-dark">
+  <!-- Navigation Bar -->
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <span class="navbar-brand">
+          <h2> <!--
+            --><span style="color: rgba(0, 132, 255, 0.76); font-family: Consolas, monaco, monospace;"><</span><!--
+            --><span style="color: rgba(255, 255, 255, 0.76); font-family: Consolas, monaco, monospace;">Tanvir</span><!--
+            --><span style="color: rgba(240, 56, 0, 0.76); font-family: Consolas, monaco, monospace;">Tanjum</span><!--
+            --><span style="color: rgb(0, 132, 255, 0.76); font-family: Consolas, monaco, monospace;">/></span>
+        </h2>
+        </span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <button type="button" class="btn btn-dark m-2" id="overviewBtn">
+                <i class="fas fa-address-card"></i>&nbsp;Overview
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-dark m-2" id="academicBtn">
+                <i class="fas fa-user-graduate"></i>&nbsp;Academic Records
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-dark m-2" id="skillBtn">
+                <i class="fas fa-laptop-code"></i>&nbsp;Skills
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-dark m-2" id="projectsBtn">
+                <i class="fas fa-project-diagram"></i>&nbsp;Projects
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-dark m-2" id="experiencesBtn">
+                <i class="fas fa-business-time"></i>&nbsp;Experiences
+              </button>
+            </li>
+            <li class="nav-item dropdown">
+            <li class="dropdown">
+              <button class="btn btn-dark dropdown-toggle m-2" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-address-book"></i>&nbsp;Contacts
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                <li>
+                  <a class="dropdown-item" target="_blank" href="https://www.facebook.com/tanvirtanjum">
+                    <i class="fab fa-facebook-square"></i>&nbsp&nbsp&nbsp&nbsp Facebook
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" target="_blank" href="https://www.instagram.com/tanvirtanjum/">
+                    <i class="fab fa-instagram-square"></i>&nbsp&nbsp&nbsp&nbsp Instagram
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" target="_blank" href="https://twitter.com/tanvirtanjum">
+                    <i class="fab fa-twitter-square"></i>&nbsp;&nbsp;&nbsp;&nbsp; Twitter
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" target="_blank" href="https://bd.linkedin.com/in/tanvirtanjum">
+                    <i class="fab fa-linkedin"></i>&nbsp;&nbsp;&nbsp;&nbsp; LinkedIn
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" target="_blank" href="https://github.com/tanvirtanjum">
+                    <i class="fab fa-github-square"></i>&nbsp;&nbsp;&nbsp;&nbsp; GitHub
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" target="_blank" href="mailto:tanjumtanvir@gmail.com">
+                    <i class="fab fa-google-plus-square"></i>&nbsp;&nbsp;&nbsp;&nbsp; Gmail (tanjumtanvir@gmail.com)
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item">
+                    <i class="fab fa-whatsapp-square"></i>&nbsp;&nbsp;&nbsp;&nbsp; +8801515217821
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item">
+                    <i class="fas fa-phone-square-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp; +8801515217821
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- OverView Tab -->
+    <div id="overview" class="container-fluid">
+      <div class="card mb-3 container-fluid">
+        <img class="img-fluid rounded mx-auto d-block img-thumbnail" src="assets/images/profile_photo.jpg" alt=""
+          style="max-width:18%;">
+        <br>
+        <div class="container-fluid" align="center">
+          <button type="button" id="downloadCVBtn" class="btn btn-outline-info btn-sm" style="max-width:35%;">
+            <i class="fas fa-download"></i>&nbsp;&nbsp;&nbsp;Download Resume
+          </button>
+        </div>
+        <div class="card-body container-fluid">
+          <h4 class="card-title">Hello! I am Tanvir Tanjum Shourav.</h4>
+
+          <p class="card-text" style="text-align: justify;">
+            I have completed my B.Sc in Computer Science and Engineering.
+            My nationality is Bangladeshi by born.
+            I practice Islam (Sunni) as religion.
+            Currently living in Dhaka, Bangladesh.
+            <br><br>
+            I am well-versed in numerous programming languages like C, C++, Java, C# etc.
+            I have strong background in project management and concern about responsibilities.
+            I always played as a Team Lead during my university projects (undergraduate).
+            I always love to face new challenges.
+            Also, love to do researches.
+            <br><br>
+            I am passionate about Web Developing.
+            I have well knowledge about various framworks to develop web sites.
+            Like Laravel, Node.js and ASP.net framwork.
+            I always prefer back-end programming over front-end.
+            I also have experiece in developing Web API (RESTful API).
+            Like back-end, I also have knowledge in front-end framework. Like jquery.
+            <br><br>
+            I am a quick learner. Always eager to learn new technologies.
+            <br><br>
+            Just like web development, I have knowledge in developing desktop application.
+            During my undergraduate, I have created several desktop applications using Java(Swing) and C#(WPF).
+            <br><br>
+            My hobby is photography. I like to capture potraits. I am also interested in various sports. Like crickect,
+            football & badminton.
+          </p>
+          <div style="text-align: right;">
+            <p class="card-text"><small class="text-muted">-Tanvir Tanjum Shourav</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Academics Tab -->
+    <div class="container-fluid" id="academic" style="max-width: 100%; max-height: 100%;">
+      <div class="container-fluid" style="max-width: 26%; max-height: 100%; float: left;">
+        <nav id="navbar-example3" class="navbar navbar-dark bg-dark flex-column align-items-stretch p-3"
+          style="max-height: 100%;">
+          <h1 class="navbar-brand"><i class="fas fa-school"></i>&nbsp&nbsp Academics</h1>
+          <nav class="nav nav-pills flex-column">
+            <button type="button" class="btn btn-dark m-2" style="text-align:left;" id="jscBtn">
+              <i class="fas fa-user-graduate"></i>&nbsp&nbsp Junior School Certificate
+            </button>
+          </nav>
+          <nav class="nav nav-pills flex-column">
+            <button type="button" class="btn btn-dark m-2" style="text-align:left;" id="sscBtn">
+              <i class="fas fa-user-graduate"></i>&nbsp&nbsp Secondary School Certificate
+            </button>
+          </nav>
+          <nav class="nav nav-pills flex-column">
+            <button type="button" class="btn btn-dark m-2" style="text-align:left;" id="hscBtn">
+              <i class="fas fa-user-graduate"></i>&nbsp&nbsp Higher Secondary School Certificate
+            </button>
+          </nav>
+          <nav class="nav nav-pills flex-column">
+            <button type="button" class="btn btn-dark m-2" style="text-align:left;" id="bscBtn">
+              <i class="fas fa-user-graduate"></i>&nbsp&nbsp Bachelor of Science
+            </button>
+          </nav>
+        </nav>
+      </div>
+
+      <div class="container-fluid" style="max-width: 74%; float: left;">
+
+        <div id="jsc" class="card mb-3 container-fluid">
+          <img class="img-fluid rounded mx-auto d-block img-thumbnail" src="assets/images/jsc.jpg" alt=""
+            style="max-width:18%;">
+          <div class="card-body container-fluid">
+            <h5 class="card-title">Junior School Certificate</h5>
+            <p class="card-text">
+            <dl class="row">
+              <dt class="col-sm-3">Name of Institution</dt>
+              <dd class="col-sm-9">Motijheel Model School & College</dd>
+
+              <dt class="col-sm-3">Official Website</dt>
+              <dd class="col-sm-9">
+                <a href="http://www.motijheelmodelschoolandcollege.edu.bd/" target="_blank">Click to visit
+                  (http://www.motijheelmodelschoolandcollege.edu.bd/)</a>
+              </dd>
+
+              <dt class="col-sm-3">Location</dt>
+              <dd class="col-sm-9">
+                <div class="container-fluid" id="map1" style="width:100%; height:20vw;">
+                  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDiIkbfHz52G8g7cz6X10ch_Tye_BrNnQ&callback=initMap1&libraries=&v=weekly" async></script> -->
+                </div>
+              </dd>
+
+              <dt class="col-sm-3">Session</dt>
+              <dd class="col-sm-9">2011</dd>
+
+              <dt class="col-sm-3">Passing Year</dt>
+              <dd class="col-sm-9">2011</dd>
+
+              <dt class="col-sm-3">Grade Point Average</dt>
+              <dd class="col-sm-9">4.79/5.00</dd>
+
+              <dt class="col-sm-3">Group</dt>
+              <dd class="col-sm-9">N/A</dd>
+
+              <dt class="col-sm-3">Achievements</dt>
+              <dd class="col-sm-9">N/A</dd>
+            </dl>
+            </p>
+          </div>
+        </div>
+
+        <div id="ssc" class="card mb-3 container-fluid">
+          <img class="img-fluid rounded mx-auto d-block img-thumbnail" src="assets/images/jsc.jpg" alt=""
+            style="max-width:18%;">
+          <div class="card-body container-fluid">
+            <h5 class="card-title">Secondary School Certificate</h5>
+            <p class="card-text">
+            <dl class="row">
+              <dt class="col-sm-3">Name of Institution</dt>
+              <dd class="col-sm-9">Motijheel Model School & College</dd>
+
+              <dt class="col-sm-3">Official Website</dt>
+              <dd class="col-sm-9">
+                <a href="http://www.motijheelmodelschoolandcollege.edu.bd/" target="_blank">Click to visit
+                  (http://www.motijheelmodelschoolandcollege.edu.bd/)</a>
+              </dd>
+
+              <dt class="col-sm-3">Location</dt>
+              <dd class="col-sm-9">
+                <div class="container-fluid" id="map2" style="width:100%; height:20vw;">
+                  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDiIkbfHz52G8g7cz6X10ch_Tye_BrNnQ&callback=initMap2&libraries=&v=weekly" async></script> -->
+                </div>
+              </dd>
+
+              <dt class="col-sm-3">Session</dt>
+              <dd class="col-sm-9">2012</dd>
+
+              <dt class="col-sm-3">Passing Year</dt>
+              <dd class="col-sm-9">2014</dd>
+
+              <dt class="col-sm-3">Grade Point Average</dt>
+              <dd class="col-sm-9">5.00/5.00</dd>
+
+              <dt class="col-sm-3">Group</dt>
+              <dd class="col-sm-9">Science</dd>
+
+              <dt class="col-sm-3">Achievements</dt>
+              <dd class="col-sm-9">N/A</dd>
+            </dl>
+            </p>
+          </div>
+        </div>
+
+        <div id="hsc" class="card mb-3 container-fluid">
+          <img class="img-fluid rounded mx-auto d-block img-thumbnail" src="assets/images/hsc.jpg" alt=""
+            style="max-width:18%;">
+          <div class="card-body container-fluid">
+            <h5 class="card-title">Higher Secondary School Certificate</h5>
+            <p class="card-text">
+            <dl class="row">
+              <dt class="col-sm-3">Name of Institution</dt>
+              <dd class="col-sm-9">St. Joseph Higher Secondary School</dd>
+
+              <dt class="col-sm-3">Official Website</dt>
+              <dd class="col-sm-9">
+                <a href="https://www.sjs.edu.bd/" target="_blank">Click to visit (https://www.sjs.edu.bd/)</a>
+              </dd>
+
+              <dt class="col-sm-3">Location</dt>
+              <dd class="col-sm-9">
+                <div id="map3" style="width:100%; height:20vw;">
+                  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDiIkbfHz52G8g7cz6X10ch_Tye_BrNnQ&callback=initMap3&libraries=&v=weekly" async></script> -->
+                </div>
+              </dd>
+
+              <dt class="col-sm-3">Session</dt>
+              <dd class="col-sm-9">2014-2015</dd>
+
+              <dt class="col-sm-3">Passing Year</dt>
+              <dd class="col-sm-9">2017</dd>
+
+              <dt class="col-sm-3">Grade Point Average</dt>
+              <dd class="col-sm-9">4.58/5.00</dd>
+
+              <dt class="col-sm-3">Group</dt>
+              <dd class="col-sm-9">Science</dd>
+
+              <dt class="col-sm-3">Achievements</dt>
+              <dd class="col-sm-9">N/A</dd>
+            </dl>
+            </p>
+          </div>
+        </div>
+
+        <div id="bsc" class="card mb-3 container-fluid">
+          <img class="img-fluid rounded mx-auto d-block img-thumbnail" src="assets/images/bsc.jpg" alt=""
+            style="max-width:18%;">
+          <div class="card-body container-fluid">
+            <h5 class="card-title">Bachelor of Science</h5>
+            <p class="card-text">
+            <dl class="row">
+              <dt class="col-sm-3">Name of Institution</dt>
+              <dd class="col-sm-9">American International University-Bangladesh (AIUB)</dd>
+
+              <dt class="col-sm-3">Official Website</dt>
+              <dd class="col-sm-9">
+                <a href="https://www.aiub.edu/" target="_blank">Click to visit (https://www.aiub.edu/)</a>
+              </dd>
+
+              <dt class="col-sm-3">Location</dt>
+              <dd class="col-sm-9">
+                <div id="map4" style="width:100%; height:20vw;">
+                  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDiIkbfHz52G8g7cz6X10ch_Tye_BrNnQ&callback=initMap4&libraries=&v=weekly" async></script> -->
+                </div>
+              </dd>
+
+              <dt class="col-sm-3">Department</dt>
+              <dd class="col-sm-9">Computer Science & Engineering</dd>
+
+              <dt class="col-sm-3">Faculty</dt>
+              <dd class="col-sm-9">FST (Faculty of Science and Technology)</dd>
+
+              <dt class="col-sm-3">Admission Date</dt>
+              <dd class="col-sm-9">25-Sep-2017</dd>
+
+              <dt class="col-sm-3">Passing Date </dt>
+              <dd class="col-sm-9">19-Jan-2021</dd>
+
+              <dt class="col-sm-4">Commulative Grade Point Average</dt>
+              <dd class="col-sm-8">3.85/4.00</dd>
+
+              <dt class="col-sm-3">Achievements</dt>
+              <dd class="col-sm-9">
+                <ul style="list-style-type:circle">
+                  <li>Dean’s Honor – Fall 2018-2019</li>
+                  <li>Magna Cum Laude(Silver Medal)</li>
+                </ul>
+              </dd>
+            </dl>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Skills Tab -->
+    <div class="container-fluid" id="skill">
+      <p class="text-md-center fs-3 fw-bold fst-italic" style="color: rgba(248, 239, 227, 0.644);">
+        <i class="fas fa-terminal"></i>&nbsp;&nbsp; Programming Languages
+      </p>
+      <p class="text-sm-center fs-4 fw-normal" style="color: rgba(252, 208, 121, 0.774);">
+        C, C++, Java, C#
+      </p>
+      <br>
+      <p class="text-md-center fs-3 fw-bold fst-italic" style="color: rgba(248, 239, 227, 0.644);">
+        <i class="fas fa-code"></i>&nbsp;&nbsp; Scripting Languages
+      </p>
+      <p class="text-sm-center fs-4 fw-normal" style="color: rgba(252, 208, 121, 0.774);">
+        JavaScript/ECMAScript
+      </p>
+      <br>
+      <p class="text-md-center fs-3 fw-bold fst-italic" style="color: rgba(248, 239, 227, 0.644);">
+        <i class="fab fa-html5"></i>&nbsp;&nbsp; Markup Languages
+      </p>
+      <p class="text-sm-center fs-4 fw-normal" style="color: rgba(252, 208, 121, 0.774);">
+        HTML, XML, CSS
+      </p>
+      <br>
+      <p class="text-md-center fs-3 fw-bold fst-italic" style="color: rgba(248, 239, 227, 0.644);">
+        <i class="fab fa-react"></i>&nbsp;&nbsp; Frontend Frameworks
+      </p>
+      <p class="text-sm-center fs-4 fw-normal" style="color: rgba(252, 208, 121, 0.774);">
+        Bootstrap, jQuery, Express.js, Blade(Laravel), Razor(Asp.net MVC),<br>
+        WPF(.net Frameworks Desktop), OpenGL(C++)
+      </p>
+      <br>
+      <p class="text-md-center fs-3 fw-bold fst-italic" style="color: rgba(248, 239, 227, 0.644);">
+        <i class="fab fa-node-js"></i>&nbsp;&nbsp; Backend Frameworks
+      </p>
+      <p class="text-sm-center fs-4 fw-normal" style="color: rgba(252, 208, 121, 0.774);">
+        node.js, Laravel, ASP.net framework MVC<br>
+        ASP.net framework API
+      </p>
+      <br>
+      <p class="text-md-center fs-3 fw-bold fst-italic" style="color: rgba(248, 239, 227, 0.644);">
+        <i class="fas fa-cog"></i>&nbsp;&nbsp; Development Tools
+      </p>
+      <p class="text-sm-center fs-4 fw-normal" style="color: rgba(252, 208, 121, 0.774);">
+        Github, TortoiseSVN, Gitlab Web, Trello
+      </p>
+      <br>
+      <p class="text-md-center fs-3 fw-bold fst-italic" style="color: rgba(248, 239, 227, 0.644);">
+        <i class="fas fa-adjust"></i>&nbsp;&nbsp; Design Tools
+      </p>
+      <p class="text-sm-center fs-4 fw-normal" style="color: rgba(252, 208, 121, 0.774);">
+        Adobe Lightroom
+      </p>
+      <br>
+      <p class="text-md-center fs-3 fw-bold fst-italic" style="color: rgba(248, 239, 227, 0.644);">
+        <i class="fas fa-marker"></i>&nbsp;&nbsp; Other Tools
+      </p>
+      <p class="text-sm-center fs-4 fw-normal" style="color: rgba(252, 208, 121, 0.774);">
+        Visual Studio, Visual Studio Code, Atom, Microsoft Word,<br>
+        Microsoft Powerpoint
+      </p>
+    </div>
+
+    <!-- Projects Tab -->
+    <div class="container-fluid" id="project">
+      <p class="text-md-center fs-3 fw-bold fst-italic" style="color: rgba(248, 239, 227, 0.644);">
+        <i class="fas fa-exclamation-triangle"></i>&nbsp;&nbsp; Under Development
+      </p>
+    </div>
+
+    <!-- Experiences Tab -->
+    <div class="container-fluid" id="experience">
+      <p class="text-md-center fs-3 fw-bold fst-italic" style="color: rgba(248, 239, 227, 0.644);">
+        <i class="fas fa-exclamation-triangle"></i>&nbsp;&nbsp; Under Development
+      </p>
+    </div>
+
+    <!-- Copy-write Claim -->
+    <p class="text-sm-center fs-6 fw-light fst-italic" style="color: rgba(250, 235, 215, 0.644);">© 2021 Tanvir Tanjum Shourav</p>
+
+  </div>
+
+  <!-- Floating Navigation Pan -->
+  <div class="fixed-bottom nav justify-content-end container-fluid">
+    <li class="nav-item dropdown">
+    <li class="btn-group dropup">
+      <button class="btn btn-dark dropdown-toggle m-2 container-fluid" type="button" id="dropdownMenuButton3"
+        data-bs-toggle="dropdown" aria-expanded="false"
+        style="background-color:rgba(2, 28, 177, 0.411); border-color: transparent; border-radius: 50%; height: 3vw; width: 3vw;"></button>
+      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton3">
+
+        <li align = "middle">
+          <!--
+          --><span style="color: rgba(0, 132, 255, 0.76); font-family: Consolas, monaco, monospace;"><</span><!--
+          --><span style="color: rgba(255, 255, 255, 0.76); font-family: Consolas, monaco, monospace;">Tanvir</span><!--
+          --><span style="color: rgba(240, 56, 0, 0.76); font-family: Consolas, monaco, monospace;">Tanjum</span><!--
+          --><span style="color: rgb(0, 132, 255, 0.76); font-family: Consolas, monaco, monospace;">/></span>
+        </li>
+        <li>
+          <button type="button" class="btn btn-dark dropdown-item" id="overviewBtn2">
+            <i class="fas fa-address-card"></i>&nbsp&nbsp Overview
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn btn-dark dropdown-item" id="academicBtn2">
+            <i class="fas fa-user-graduate"></i>&nbsp&nbsp Academic Records
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn btn-dark dropdown-item" id="skillBtn2">
+            <i class="fas fa-laptop-code"></i>&nbsp&nbsp Skills
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn btn-dark dropdown-item" id="projectsBtn2">
+            <i class="fas fa-project-diagram"></i>&nbsp&nbsp Projects
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn btn-dark dropdown-item" id="experiencesBtn2">
+            <i class="fas fa-business-time"></i>&nbsp&nbsp Experiences
+          </button>
+        </li>
+      </ul>
+    </li>
+  </div>
+  
+</body>
+
+</html>

@@ -13,6 +13,10 @@ $(document).ready(function(){
         $("#skill").attr("hidden", "hidden");
         $("#project").attr("hidden", "hidden");
         $("#experience").attr("hidden", "hidden");
+
+        $('html, body').animate({
+            scrollTop: $("#overview").offset().top
+        }, 1000);
     });
 
     $("#academicBtn").on("click",function(){
@@ -22,6 +26,10 @@ $(document).ready(function(){
         $("#skill").attr("hidden", "hidden");
         $("#project").attr("hidden", "hidden");
         $("#experience").attr("hidden", "hidden");
+
+        $('html, body').animate({
+            scrollTop: $("#academic").offset().top
+        }, 1000);
     });
 
     $("#skillBtn").on("click",function(){
@@ -31,6 +39,10 @@ $(document).ready(function(){
         $("#academic").attr("hidden", "hidden");
         $("#project").attr("hidden", "hidden");
         $("#experience").attr("hidden", "hidden");
+
+        $('html, body').animate({
+            scrollTop: $("#skill").offset().top
+        }, 1000);
     });
 
     $("#projectsBtn").on("click",function(){
@@ -40,6 +52,10 @@ $(document).ready(function(){
         $("#skill").attr("hidden", "hidden");
         $("#overview").attr("hidden", "hidden");
         $("#experience").attr("hidden", "hidden");
+
+        $('html, body').animate({
+            scrollTop: $("#project").offset().top
+        }, 1000);
     });
 
     $("#experiencesBtn").on("click",function(){
@@ -49,6 +65,10 @@ $(document).ready(function(){
         $("#skill").attr("hidden", "hidden");
         $("#project").attr("hidden", "hidden");
         $("#overview").attr("hidden", "hidden");
+
+        $('html, body').animate({
+            scrollTop: $("#experience").offset().top
+        }, 1000);
     });
 
     //Floating ROUTE

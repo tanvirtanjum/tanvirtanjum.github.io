@@ -7,6 +7,8 @@ $(document).ready(function(){
     $("#experience").attr("hidden", "hidden");
 
     $("#overviewBtn").on("click",function(){
+        $("#navbarNavDropdown").collapse('hide');
+        
         $("#overview").removeAttr("hidden", "hidden");
 
         $("#academic").attr("hidden", "hidden");
@@ -17,9 +19,12 @@ $(document).ready(function(){
         $('html, body').animate({
             scrollTop: $("#overview").offset().top
         }, 1000);
+
     });
 
     $("#academicBtn").on("click",function(){
+        $("#navbarNavDropdown").collapse('hide');
+
         $("#academic").removeAttr("hidden", "hidden");
 
         $("#overview").attr("hidden", "hidden");
@@ -30,9 +35,12 @@ $(document).ready(function(){
         $('html, body').animate({
             scrollTop: $("#academic").offset().top
         }, 1000);
+
     });
 
     $("#skillBtn").on("click",function(){
+        $("#navbarNavDropdown").collapse('hide');
+
         $("#skill").removeAttr("hidden", "hidden");
 
         $("#overview").attr("hidden", "hidden");
@@ -43,9 +51,12 @@ $(document).ready(function(){
         $('html, body').animate({
             scrollTop: $("#skill").offset().top
         }, 1000);
+
     });
 
     $("#projectsBtn").on("click",function(){
+        $("#navbarNavDropdown").collapse('hide');
+
         $("#project").removeAttr("hidden", "hidden");
 
         $("#academic").attr("hidden", "hidden");
@@ -56,9 +67,12 @@ $(document).ready(function(){
         $('html, body').animate({
             scrollTop: $("#project").offset().top
         }, 1000);
+
     });
 
     $("#experiencesBtn").on("click",function(){
+        $("#navbarNavDropdown").collapse('hide');
+
         $("#experience").removeAttr("hidden", "hidden");
 
         $("#academic").attr("hidden", "hidden");
@@ -69,29 +83,29 @@ $(document).ready(function(){
         $('html, body').animate({
             scrollTop: $("#experience").offset().top
         }, 1000);
+
     });
 
     //Floating ROUTE
     $("#overviewBtn2").on("click",function(){
-        $("#overviewBtn").click()
+        $("#overviewBtn").click();
     });
 
     $("#academicBtn2").on("click",function(){
-        $("#academicBtn").click()
+        $("#academicBtn").click();
     });
 
     $("#skillBtn2").on("click",function(){
-        $("#skillBtn").click()
+        $("#skillBtn").click();
     });
 
     $("#projectsBtn2").on("click",function(){
-        $("#projectsBtn").click()
+        $("#projectsBtn").click();
     });
 
     $("#experiencesBtn2").on("click",function(){
-        $("#experiencesBtn").click()
+        $("#experiencesBtn").click();
     });
-
 
     //DOANLOAD
     $("#downloadCVBtn").on("click",function(){

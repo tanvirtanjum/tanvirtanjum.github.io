@@ -1,10 +1,13 @@
 $(document).ready(function(){
 
     //ROUTES
+    $("#overview").attr("hidden", "hidden");
     $("#academic").attr("hidden", "hidden");
     $("#skill").attr("hidden", "hidden");
     $("#project").attr("hidden", "hidden");
     $("#experience").attr("hidden", "hidden");
+
+    $("#overview").removeAttr("hidden", "hidden");
 
     $("#overviewBtn").on("click",function(){
         // $("#navbarNavDropdown").collapse('hide');

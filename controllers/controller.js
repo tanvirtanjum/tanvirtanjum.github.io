@@ -1,5 +1,23 @@
 $(document).ready(function(){
 
+    //Start
+    $("#Portfolio").attr("hidden", "hidden");
+    $("#popNav").attr("hidden", "hidden");
+    $("#load").attr("hidden", "hidden");
+
+    $("#load").removeAttr("hidden", "hidden");
+
+    $(function() {
+        // setTimeout() function will be fired after page is loaded
+        // it will wait for 5 sec. and then will fire
+        // $("#successMessage").hide() function
+        setTimeout(function() {
+            $("#load").attr("hidden", "hidden");
+    
+            $("#Portfolio").removeAttr("hidden", "hidden");
+            $("#popNav").removeAttr("hidden", "hidden");
+        }, 2000);
+    });
     //ROUTES
     $("#overview").attr("hidden", "hidden");
     $("#academic").attr("hidden", "hidden");

@@ -15,7 +15,7 @@ $(document).ready(function(){
             $("#popNav").removeAttr("hidden", "hidden");
         }, 2000);
     });
-    
+
     //ROUTES
     $("#overview").attr("hidden", "hidden");
     $("#academic").attr("hidden", "hidden");
@@ -54,7 +54,7 @@ $(document).ready(function(){
 
         $('html, body').animate({
             scrollTop: $("#academic").offset().top
-        }, 1000);
+        }, 500);
 
         $("#navbarNavDropdown").collapse('hide');
     });
@@ -71,7 +71,7 @@ $(document).ready(function(){
 
         $('html, body').animate({
             scrollTop: $("#skill").offset().top
-        }, 1000);
+        }, 500);
 
         $("#navbarNavDropdown").collapse('hide');
     });
@@ -88,7 +88,7 @@ $(document).ready(function(){
 
         $('html, body').animate({
             scrollTop: $("#project").offset().top
-        }, 1000);
+        }, 500);
 
         $("#navbarNavDropdown").collapse('hide');
     });
@@ -105,7 +105,7 @@ $(document).ready(function(){
 
         $('html, body').animate({
             scrollTop: $("#experience").offset().top
-        }, 1000);
+        }, 500);
 
         $("#navbarNavDropdown").collapse('hide');
     });

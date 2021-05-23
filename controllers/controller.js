@@ -37,7 +37,7 @@ $(document).ready(function(){
 
         $('html, body').animate({
             scrollTop: $("#overview").offset().top
-        }, 1000);
+        }, 500);
 
         $("#navbarNavDropdown").collapse('hide');
     });

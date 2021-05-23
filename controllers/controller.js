@@ -7,7 +7,7 @@ $(document).ready(function(){
     $("#experience").attr("hidden", "hidden");
 
     $("#overviewBtn").on("click",function(){
-        $("#navbarNavDropdown").collapse('hide');
+        // $("#navbarNavDropdown").collapse('hide');
         
         $("#overview").removeAttr("hidden", "hidden");
 
@@ -20,10 +20,11 @@ $(document).ready(function(){
             scrollTop: $("#overview").offset().top
         }, 1000);
 
+        $("#navbarNavDropdown").collapse('hide');
     });
 
     $("#academicBtn").on("click",function(){
-        $("#navbarNavDropdown").collapse('hide');
+        // $("#navbarNavDropdown").collapse('hide');
 
         $("#academic").removeAttr("hidden", "hidden");
 
@@ -36,10 +37,11 @@ $(document).ready(function(){
             scrollTop: $("#academic").offset().top
         }, 1000);
 
+        $("#navbarNavDropdown").collapse('hide');
     });
 
     $("#skillBtn").on("click",function(){
-        $("#navbarNavDropdown").collapse('hide');
+        // $("#navbarNavDropdown").collapse('hide');
 
         $("#skill").removeAttr("hidden", "hidden");
 
@@ -52,10 +54,11 @@ $(document).ready(function(){
             scrollTop: $("#skill").offset().top
         }, 1000);
 
+        $("#navbarNavDropdown").collapse('hide');
     });
 
     $("#projectsBtn").on("click",function(){
-        $("#navbarNavDropdown").collapse('hide');
+        // $("#navbarNavDropdown").collapse('hide');
 
         $("#project").removeAttr("hidden", "hidden");
 
@@ -68,10 +71,11 @@ $(document).ready(function(){
             scrollTop: $("#project").offset().top
         }, 1000);
 
+        $("#navbarNavDropdown").collapse('hide');
     });
 
     $("#experiencesBtn").on("click",function(){
-        $("#navbarNavDropdown").collapse('hide');
+        // $("#navbarNavDropdown").collapse('hide');
 
         $("#experience").removeAttr("hidden", "hidden");
 
@@ -84,6 +88,7 @@ $(document).ready(function(){
             scrollTop: $("#experience").offset().top
         }, 1000);
 
+        $("#navbarNavDropdown").collapse('hide');
     });
 
     //Floating ROUTE

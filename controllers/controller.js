@@ -131,7 +131,7 @@ $(document).ready(function(){
         $("#experiencesBtn").click();
     });
 
-    //DOANLOAD
+    //DOWNLOAD
     $("#downloadCVBtn").on("click",function(){
         window.location.href = './assets/downloads/CV_TANVIR TANJUM SHOURAV.docx';
     });

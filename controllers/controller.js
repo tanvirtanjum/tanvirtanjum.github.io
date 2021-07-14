@@ -132,8 +132,20 @@ $(document).ready(function(){
     });
 
     //DOWNLOAD
-    $("#downloadCVBtn").on("click",function(){
-        window.location.href = './assets/downloads/CV_TANVIR TANJUM SHOURAV.docx';
+    $("#downloadCVDocxBtn").on("click",function(){
+        // window.location.href = './assets/downloads/CV_TANVIR TANJUM SHOURAV.docx';
+        window.open(
+            './assets/downloads/CV_TANVIR TANJUM SHOURAV.docx',
+            '_blank'
+          );
+    });
+
+    $("#downloadCVPdfBtn").on("click",function(){
+        // window.location.href = './assets/downloads/CV_TANVIR TANJUM SHOURAV.pdf';
+        window.open(
+            './assets/downloads/CV_TANVIR TANJUM SHOURAV.pdf',
+            '_blank'
+          );
     });
     
 

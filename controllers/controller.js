@@ -115,7 +115,8 @@ $(document).ready(function(){
         $("#overviewBtn").click();
     });
 
-    $("#downloadBtn").on("click",function(){
+    $("#downloadBtn").on("click",function(){      
+        $("#navbarToggleBTN").click();
         $("#downloadPopBtn").click();
     });
 
@@ -150,6 +151,14 @@ $(document).ready(function(){
             './assets/downloads/CV_TANVIR TANJUM SHOURAV.pdf',
             '_blank'
           );
+    });
+
+    $("#closeDownloadBTN").on("click",function(){      
+        $("#navbarToggleBTN").click();
+    });
+
+    $("#closeDownload2BTN").on("click",function(){      
+        $("#navbarToggleBTN").click();
     });
     
 

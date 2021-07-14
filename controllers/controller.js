@@ -115,6 +115,10 @@ $(document).ready(function(){
         $("#overviewBtn").click();
     });
 
+    $("#downloadBtn").on("click",function(){
+        $("#downloadPopBtn").click();
+    });
+
     $("#academicBtn2").on("click",function(){
         $("#academicBtn").click();
     });

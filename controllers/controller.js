@@ -35,9 +35,9 @@ $(document).ready(function(){
         $("#project").attr("hidden", "hidden");
         $("#experience").attr("hidden", "hidden");
 
-        $('html, body').animate({
-            scrollTop: $("#overview").offset().top
-        }, 500);
+        // $('html, body').animate({
+        //     scrollTop: $("#overview").offset().top
+        // }, 500);
 
         $("#navbarNavDropdown").collapse('hide');
     });
@@ -52,9 +52,9 @@ $(document).ready(function(){
         $("#project").attr("hidden", "hidden");
         $("#experience").attr("hidden", "hidden");
 
-        $('html, body').animate({
-            scrollTop: $("#academic").offset().top
-        }, 500);
+        // $('html, body').animate({
+        //     scrollTop: $("#academic").offset().top
+        // }, 500);
 
         $("#navbarNavDropdown").collapse('hide');
     });
@@ -69,9 +69,9 @@ $(document).ready(function(){
         $("#project").attr("hidden", "hidden");
         $("#experience").attr("hidden", "hidden");
 
-        $('html, body').animate({
-            scrollTop: $("#skill").offset().top
-        }, 500);
+        // $('html, body').animate({
+        //     scrollTop: $("#skill").offset().top
+        // }, 500);
 
         $("#navbarNavDropdown").collapse('hide');
     });
@@ -86,9 +86,9 @@ $(document).ready(function(){
         $("#overview").attr("hidden", "hidden");
         $("#experience").attr("hidden", "hidden");
 
-        $('html, body').animate({
-            scrollTop: $("#project").offset().top
-        }, 500);
+        // $('html, body').animate({
+        //     scrollTop: $("#project").offset().top
+        // }, 500);
 
         $("#navbarNavDropdown").collapse('hide');
     });
@@ -103,9 +103,9 @@ $(document).ready(function(){
         $("#project").attr("hidden", "hidden");
         $("#overview").attr("hidden", "hidden");
 
-        $('html, body').animate({
-            scrollTop: $("#experience").offset().top
-        }, 500);
+        // $('html, body').animate({
+        //     scrollTop: $("#experience").offset().top
+        // }, 500);
 
         $("#navbarNavDropdown").collapse('hide');
     });

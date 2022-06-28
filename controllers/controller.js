@@ -115,10 +115,10 @@ $(document).ready(function(){
         $("#overviewBtn").click();
     });
 
-    $("#downloadBtn").on("click",function(){      
-        $("#navbarToggleBTN").click();
-        $("#downloadPopBtn").click();
-    });
+    // $("#downloadBtn").on("click",function(){      
+    //     $("#navbarToggleBTN").click();
+    //     $("#downloadPopBtn").click();
+    // });
 
     $("#academicBtn2").on("click",function(){
         $("#academicBtn").click();
@@ -153,13 +153,13 @@ $(document).ready(function(){
           );
     });
 
-    $("#closeDownloadBTN").on("click",function(){      
-        $("#navbarToggleBTN").click();
-    });
+    // $("#closeDownloadBTN").on("click",function(){      
+    //     $("#navbarToggleBTN").click();
+    // });
 
-    $("#closeDownload2BTN").on("click",function(){      
-        $("#navbarToggleBTN").click();
-    });
+    // $("#closeDownload2BTN").on("click",function(){      
+    //     $("#navbarToggleBTN").click();
+    // });
     
 
     //ACADEMIC ROUTE

@@ -73,29 +73,6 @@
                 <button type="button" id="downloadPopBtn" class="btn btn-dark m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <i class="fas fa-download"></i>&nbsp;Download Resume
                 </button>
-      
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-hand-pointer"></i>&nbsp;&nbsp;Select File Formate</h5>
-                        <button type="button" id="closeDownloadBTN" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body" align="center">
-                        <button type="button" id="downloadCVDocxBtn" class="btn btn-primary btn-sm mb-3">
-                          <i class="fas fa-file-word"></i>&nbsp;&nbsp;Download Resume (.doc Formate)
-                        </button>
-                        <button type="button" id="downloadCVPdfBtn" class="btn btn-danger btn-sm">
-                          <i class="fas fa-file-pdf"></i>&nbsp;&nbsp;Download Resume (.pdf Formate)
-                        </button>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" id="closeDownload2BTN" class="btn btn-warning" data-bs-dismiss="modal"><i class="fas fa-times-circle"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
             </li>
             <li class="nav-item">
               <button type="button" class="btn btn-dark m-2" id="academicBtn">
@@ -575,7 +552,7 @@
           </button>
         </li>
         <li>
-          <button type="button" id="downloadBtn" class="btn btn-dark dropdown-item">
+          <button type="button" id="downloadBtn" class="btn btn-dark dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <i class="fas fa-download"></i>&nbsp;&nbsp; Download Resume
           </button>
         </li>
@@ -602,7 +579,30 @@
       </ul>
     </li>
   </div>
-  
+
+  <!-- Download Resume Modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-hand-pointer"></i>&nbsp;&nbsp;Select File Formate</h5>
+          <button type="button" id="closeDownloadBTN" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" align="center">
+          <button type="button" id="downloadCVDocxBtn" class="btn btn-primary btn-sm mb-3">
+            <i class="fas fa-file-word"></i>&nbsp;&nbsp;Download Resume (.doc Formate)
+          </button>
+          <button type="button" id="downloadCVPdfBtn" class="btn btn-danger btn-sm">
+            <i class="fas fa-file-pdf"></i>&nbsp;&nbsp;Download Resume (.pdf Formate)
+          </button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="closeDownload2BTN" class="btn btn-warning" data-bs-dismiss="modal"><i class="fas fa-times-circle"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>  
 </body>
 
 </html>

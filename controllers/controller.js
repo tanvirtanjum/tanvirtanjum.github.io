@@ -16,7 +16,7 @@ $(document).ready(function(){
     
             $("#Portfolio").removeAttr("hidden", "hidden");
             $("#popNav").removeAttr("hidden", "hidden");
-        }, 2200);
+        }, 2100);
     });
 
     //ROUTES

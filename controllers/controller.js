@@ -3,7 +3,7 @@ $(document).ready(function(){
     //Start
     $("#Portfolio").attr("hidden", "hidden");
     $("#popNav").attr("hidden", "hidden");
-    $("#load").attr("hidden", "hidden");
+    // $("#load").attr("hidden", "hidden");
 
     
     $("#animation_logo").attr("src", "./assets/images/TanvirTanjum.gif");

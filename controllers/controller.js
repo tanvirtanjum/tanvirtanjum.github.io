@@ -5,6 +5,9 @@ $(document).ready(function(){
     $("#popNav").attr("hidden", "hidden");
     $("#load").attr("hidden", "hidden");
 
+    
+    $("#animation_logo").attr("src", "./assets/images/TanvirTanjum.gif");
+
     $("#load").removeAttr("hidden", "hidden");
 
     $(function() {

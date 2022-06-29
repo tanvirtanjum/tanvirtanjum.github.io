@@ -3,6 +3,7 @@ $(document).ready(function(){
     //Start
     $("#Portfolio").attr("hidden", "hidden");
     $("#popNav").attr("hidden", "hidden");
+    $("#footer").attr("hidden", "hidden");
     // $("#load").attr("hidden", "hidden");
 
     
@@ -16,6 +17,7 @@ $(document).ready(function(){
     
             $("#Portfolio").removeAttr("hidden", "hidden");
             $("#popNav").removeAttr("hidden", "hidden");
+            $("#footer").removeAttr("hidden", "hidden");
         }, 2100);
     });
 

@@ -1,10 +1,10 @@
 $(document).ready(function(){
 
     //Start
+    $("#topNav").attr("hidden", "hidden");
     $("#Portfolio").attr("hidden", "hidden");
     $("#popNav").attr("hidden", "hidden");
     $("#footer").attr("hidden", "hidden");
-    // $("#load").attr("hidden", "hidden");
 
     
     $("#animation_logo").attr("src", "./assets/images/TanvirTanjum.gif");
@@ -15,10 +15,11 @@ $(document).ready(function(){
         setTimeout(function() {
             $("#load").attr("hidden", "hidden");
     
+            $("#topNav").removeAttr("hidden", "hidden");
             $("#Portfolio").removeAttr("hidden", "hidden");
             $("#popNav").removeAttr("hidden", "hidden");
             $("#footer").removeAttr("hidden", "hidden");
-        }, 2100);
+        }, 2050);
     });
 
     //ROUTES

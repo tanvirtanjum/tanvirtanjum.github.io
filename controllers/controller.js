@@ -169,9 +169,10 @@ $(document).ready(function(){
     
 
     //ACADEMIC ROUTE
-    $("#ssc").attr("hidden", "hidden");
-    $("#hsc").attr("hidden", "hidden");
     $("#bsc").attr("hidden", "hidden");
+    $("#hsc").attr("hidden", "hidden");
+    $("#ssc").attr("hidden", "hidden");
+    $("#jsc").attr("hidden", "hidden");
 
     $("#jscBtn").on("click",function(){
         $("#jsc").removeAttr("hidden", "hidden");
@@ -179,6 +180,7 @@ $(document).ready(function(){
         $("#ssc").attr("hidden", "hidden");
         $("#hsc").attr("hidden", "hidden");
         $("#bsc").attr("hidden", "hidden");
+        $("#msc").attr("hidden", "hidden");
     });
 
     $("#sscBtn").on("click",function(){
@@ -187,6 +189,7 @@ $(document).ready(function(){
         $("#jsc").attr("hidden", "hidden");
         $("#hsc").attr("hidden", "hidden");
         $("#bsc").attr("hidden", "hidden");
+        $("#msc").attr("hidden", "hidden");
     });
 
     $("#hscBtn").on("click",function(){
@@ -195,6 +198,7 @@ $(document).ready(function(){
         $("#jsc").attr("hidden", "hidden");
         $("#ssc").attr("hidden", "hidden");
         $("#bsc").attr("hidden", "hidden");
+        $("#msc").attr("hidden", "hidden");
     });
 
     $("#bscBtn").on("click",function(){
@@ -203,6 +207,16 @@ $(document).ready(function(){
         $("#jsc").attr("hidden", "hidden");
         $("#ssc").attr("hidden", "hidden");
         $("#hsc").attr("hidden", "hidden");
+        $("#msc").attr("hidden", "hidden");
+    });
+
+    $("#mscBtn").on("click",function(){
+        $("#msc").removeAttr("hidden", "hidden");
+
+        $("#jsc").attr("hidden", "hidden");
+        $("#ssc").attr("hidden", "hidden");
+        $("#hsc").attr("hidden", "hidden");
+        $("#bsc").attr("hidden", "hidden");
     });
    
 });

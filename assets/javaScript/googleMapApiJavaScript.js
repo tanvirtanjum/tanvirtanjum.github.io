@@ -2,7 +2,7 @@
 function initMap1() 
 {
     // The location of loc
-    const loc = { lat: 23.73286740974006, lng: 90.42418355416557 };
+    const loc = { lat: 23.7328/*6740974006*/, lng: 90.4241/*8355416557*/ };
     // The map, centered at loc
     const map = new google.maps.Map(document.getElementById("map1"), {
       zoom: 15,
@@ -18,7 +18,7 @@ function initMap1()
 function initMap2() 
 {
     // The location of loc
-    const loc = { lat: 23.73286740974006, lng: 90.42418355416557 };
+    const loc = { lat: 23.7328/*6740974006*/, lng: 90.4241/*8355416557*/ };
     // The map, centered at loc
     const map = new google.maps.Map(document.getElementById("map2"), {
       zoom: 15,
@@ -34,7 +34,7 @@ function initMap2()
 function initMap3()
 {
     // The location of loc
-    const loc = { lat: 23.75970701601936, lng: 90.37032253169666 };
+    const loc = { lat: 23.7597/*0701601936*/, lng: 90.3703/*2253169666*/ };
     // The map, centered at loc
     const map = new google.maps.Map(document.getElementById("map3"), {
       zoom: 15,
@@ -50,7 +50,7 @@ function initMap3()
 function initMap4()
 {
     // The location of loc
-    const loc = { lat: 23.822149863718685, lng: 90.42741701582443 };
+    const loc = { lat: 23.8221/*49863718685*/, lng: 90.4274/*1701582443*/ };
     // The map, centered at loc
     const map = new google.maps.Map(document.getElementById("map4"), {
       zoom: 15,

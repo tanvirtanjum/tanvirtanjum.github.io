@@ -66,7 +66,7 @@ function initMap4()
 function initMap5()
 {
     // The location of loc
-    const loc = { lat:  49.59798121009576, lng: 11.004543696110806 };
+    const loc = { lat:  48.7670, lng: 11.4326 };
     // The map, centered at loc
     const map = new google.maps.Map(document.getElementById("map5"), {
       zoom: 15,
